@@ -253,3 +253,112 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/hnkhanhvy31/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap.git
    81efedb..9aca620  main -> main
 
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus
+eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac
+finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el dui nec feugiat.
+Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla
+sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis
+pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus
+dignissim mollis leo, vitae tristique enim." > text_branch_1.txt
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_5)
+$ git add .
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_5)
+$ git commit -m "branch_5"
+[branch_5 e0ee012] branch_5
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 664 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/hnkhanhvy31/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/hnkhanhvy31/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+g
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git branch -D branch_5
+Deleted branch branch_5 (was e0ee012).
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git branch -l
+  branch_1
+  branch_2
+  branch_3
+* main
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git fetch
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 7.29 KiB | 143.00 KiB/s, done.
+From https://github.com/hnkhanhvy31/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap
+   00d1d6b..511cdfa  main       -> origin/main
+   5372580..7b251fd  branch_1   -> origin/branch_1
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git pull
+Updating 00d1d6b..511cdfa
+Fast-forward
+ caulenh.txt       | 255 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ text_branch_1.txt |   8 ++
+ text_branch_2.txt |   1 +
+ text_branch_3.txt |   1 +
+ text_branch_4.txt |   1 +
+ 5 files changed, 266 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git branch -D branch_1 branch_2
+Deleted branch branch_1 (was 5372580).
+Deleted branch branch_2 (was 2777d1b).
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 1997016).
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git add .
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git commit -m "xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$ git push origin
+Everything up-to-date
+
+dell@DESKTOP-2D5M4PL MINGW64 /c/bong/18a3/tin học cs/24174600156_Hoang_Nguyen_Khanh_Vy_bai_tap (main)
+$
